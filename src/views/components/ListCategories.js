@@ -9,23 +9,34 @@ import {
 } from 'react-native';
 import categories from '../../consts/categories';
 import COLORS from '../../consts/colors';
-
+import {useDispatch} from 'react-redux';
+import {addCategory} from '../../redux/action';
+const categoryvariable = {
+  pizzas: 'پیتزا',
+  sushies: 'سوشی',
+  bergers: 'برگر',
+  salads: 'سالاد',
+};
 const ListCategories = () => {
+  const dispatch = useDispatch();
   const [selectedCategoryIndex, setSelectedCategoryIndex] = React.useState(0);
   return (
     <ScrollView
       horizontal
       showsHorizontalScrollIndicator={false}
       contentContainerStyle={style.categoriesListContainer}>
-      {categories.map((category, index) => (
+      {categories.map(category => (
         <TouchableOpacity
-          key={index}
+          key={category.id}
           activeOpacity={0.8}
-          onPress={() => setSelectedCategoryIndex(index)}>
+          onPress={() => {
+            dispatch(addCategory(category.name));
+            setSelectedCategoryIndex(category.id);
+          }}>
           <View
             style={{
               backgroundColor:
-                selectedCategoryIndex == index
+                selectedCategoryIndex === category.id
                   ? COLORS.primary
                   : COLORS.secondary,
               ...style.categoryBtn,
@@ -42,11 +53,11 @@ const ListCategories = () => {
                 fontWeight: 'bold',
                 marginLeft: 10,
                 color:
-                  selectedCategoryIndex == index
+                  selectedCategoryIndex == category.id
                     ? COLORS.white
                     : COLORS.primary,
               }}>
-              {category.name}
+              {categoryvariable[category.name]}
             </Text>
           </View>
         </TouchableOpacity>

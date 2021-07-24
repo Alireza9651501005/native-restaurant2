@@ -5,20 +5,21 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import COLORS from '../../consts/colors';
 import HomeScreen from '../screens/HomeScreen';
 import CartScreen from '../screens/CartScreen';
+import FaveScreen from '../screens/faveScreen';
 import {Badge} from 'react-native-elements';
 import {useSelector} from 'react-redux';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {
   faShoppingCart,
   faHeart,
-  faEnvelope,
   faHome,
 } from '@fortawesome/free-solid-svg-icons';
 
 const Tab = createBottomTabNavigator();
 
 const BottomNavigator = () => {
-  const state = useSelector(state => state);
+  const state1 = useSelector(state => state.reducer);
+  const state2 = useSelector(state => state.reducer3);
   return (
     <Tab.Navigator
       tabBarOptions={{
@@ -39,7 +40,7 @@ const BottomNavigator = () => {
           ),
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="LocalMall"
         component={HomeScreen}
         options={{
@@ -47,13 +48,20 @@ const BottomNavigator = () => {
             <FontAwesomeIcon icon={faEnvelope} size={30} color={color} />
           ),
         }}
-      />
+      /> */}
       <Tab.Screen
         name="Favorite"
-        component={HomeScreen}
+        component={FaveScreen}
         options={{
           tabBarIcon: ({color}) => (
-            <FontAwesomeIcon icon={faHeart} size={30} color={color} />
+            <>
+              <FontAwesomeIcon icon={faHeart} size={30} color={color} />
+              <Badge
+                status="error"
+                value={state2 ? state2.length : 0}
+                containerStyle={{position: 'absolute', top: 2, left: 28}}
+              />
+            </>
           ),
         }}
       />
@@ -66,8 +74,8 @@ const BottomNavigator = () => {
               <FontAwesomeIcon icon={faShoppingCart} size={30} color={color} />
               <Badge
                 status="error"
-                value={state.length}
-                containerStyle={{position: 'absolute', top: -1, left: 8}}
+                value={state1.length}
+                containerStyle={{position: 'absolute', top: 0, left: 28}}
               />
             </>
           ),
@@ -77,10 +85,10 @@ const BottomNavigator = () => {
   );
 };
 
-const style = StyleSheet.create({
-  imgg: {
-    width: 30,
-    height: 30,
-  },
-});
+// const style = StyleSheet.create({
+//   imgg: {
+//     width: 30,
+//     height: 30,
+//   },
+// });
 export default BottomNavigator;

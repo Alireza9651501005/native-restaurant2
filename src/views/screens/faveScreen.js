@@ -7,15 +7,14 @@ import COLORS from '../../consts/colors';
 import {PrimaryButton} from '../components/Button';
 import {useSelector, useDispatch} from 'react-redux';
 import {checkout} from './../../redux/action';
-import CartCard from '../components/CartCard';
+import CartCard2 from '../components/CartCard2';
 import {useDeviceOrientation} from '@react-native-community/hooks';
 
-const CartScreen = ({navigation}) => {
+const FaveScreen = ({navigation}) => {
   const {portrait} = useDeviceOrientation();
 
   const dispatch = useDispatch();
-  const state = useSelector(state => state.reducer);
-  let sum = 0;
+  const state = useSelector(state => state.reducer3);
   return (
     <SafeAreaView style={{backgroundColor: COLORS.white, flex: 1}}>
       <View style={style.header}>
@@ -25,13 +24,13 @@ const CartScreen = ({navigation}) => {
           onPress={navigation.goBack}
         />
         <Text style={{fontSize: 20, fontWeight: 'bold', marginLeft: 7}}>
-          Cart
+          Favourits
         </Text>
       </View>
       {!state.length ? (
         <View style={style.empty}>
           <Text style={[style.textt, {marginVertical: portrait ? 200 : 50}]}>
-            سبد خرید شما خالی است
+            در حال حاضر لیست علاقه مندی خالی است
           </Text>
         </View>
       ) : (
@@ -40,25 +39,11 @@ const CartScreen = ({navigation}) => {
           contentContainerStyle={{paddingBottom: 80}}
           data={state}
           renderItem={({item}) => {
-            sum += item.count * item.price;
-            return <CartCard item={item} />;
+            return <CartCard2 item={item} />;
           }}
           ListFooterComponentStyle={{paddingHorizontal: 20, marginTop: 20}}
           ListFooterComponent={() => (
             <View>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  justifyContent: 'space-between',
-                  marginVertical: 15,
-                }}>
-                <Text style={{fontSize: 18, fontWeight: 'bold'}}>
-                  کل مبلغ پرداختی
-                </Text>
-                <Text style={{fontSize: 18, fontWeight: 'bold'}}>
-                  {sum.toFixed(2)}
-                </Text>
-              </View>
               <View
                 style={{
                   marginHorizontal: 30,
@@ -66,7 +51,7 @@ const CartScreen = ({navigation}) => {
                   justifyContent: 'center',
                 }}>
                 <PrimaryButton
-                  title="حذف همه"
+                  title="حذف لیست"
                   onPress={() => dispatch(checkout())}
                 />
               </View>
@@ -97,4 +82,4 @@ const style = StyleSheet.create({
   },
 });
 
-export default CartScreen;
+export default FaveScreen;

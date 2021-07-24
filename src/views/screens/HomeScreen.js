@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   Image,
   SafeAreaView,
@@ -11,15 +11,69 @@ import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faSearch, faSearchPlus} from '@fortawesome/free-solid-svg-icons';
 import {FlatList, TextInput} from 'react-native-gesture-handler';
 import COLORS from '../../consts/colors';
-import foods from '../../consts/foods';
-
+import {useSelector} from 'react-redux';
 import Card from '../components/Card';
 import {useDeviceOrientation} from '@react-native-community/hooks';
 
 import ListCategories from '../components/ListCategories';
+import {pizzas} from './../../consts/foods';
+import {sushies} from './../../consts/foods';
+import {salads} from './../../consts/foods';
+import {bergers} from './../../consts/foods';
 
 const HomeScreen = ({navigation}) => {
+  const state = useSelector(state => state.reducer2);
+  const [posts, setPosts] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [postsPerPage] = useState(10);
   const {portrait} = useDeviceOrientation();
+
+  useEffect(() => {
+    if (state.length) {
+      switch (state.toString()) {
+        case 'bergers': {
+          setPosts(bergers);
+          setCurrentPage(1);
+        }
+        break;
+        case 'sushies': {
+          setPosts(sushies);
+          setCurrentPage(1);
+        }
+        break;
+        case 'salads': {
+          setPosts(salads);
+          setCurrentPage(1);
+        }
+        break;
+        case 'pizzas': {
+          setPosts(pizzas);
+          setCurrentPage(1);
+        }
+        break;
+        default:
+          setPosts(pizzas);
+      }
+    } else {
+      setPosts(pizzas);
+    }
+  }, [state]);
+
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
+  const changeIndex = () => {
+    currentPage < Math.ceil(posts.length / postsPerPage)
+      ? setCurrentPage(prev => prev + 1)
+      : setCurrentPage(prev => (prev = 1));
+  };
+
+  const pages = {
+    1: 'صفحه 1',
+    2: 'صفحه 2',
+    3: 'صفحه 3',
+  };
 
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: COLORS.white}}>
@@ -40,9 +94,6 @@ const HomeScreen = ({navigation}) => {
                 سلام
               </Text>
             </View>
-            {/* <Text style={{marginTop: 5, fontSize: portrait? 20 : 15, color: COLORS.grey}}>
-            امروز چی میخوای سفارش بدی ؟!
-          </Text> */}
           </View>
           <TouchableOpacity onPress={() => navigation.navigate('Password')}>
             <Image
@@ -70,11 +121,16 @@ const HomeScreen = ({navigation}) => {
         </View>
       </View>
       <View style={style.constentCards}>
+        <Text>برای تغییر صفحه به سمت پایین اسکرول کنید</Text>
+        <Text style={style.txx}>{pages[currentPage]}</Text>
         <FlatList
           showsVerticalScrollIndicator={false}
           numColumns={2}
-          data={foods}
+          data={currentPosts}
+          keyExtractor={(item, index) => index}
           renderItem={({item}) => <Card food={item} navigation={navigation} />}
+          onEndReachedThreshold={0}
+          onEndReached={changeIndex}
         />
       </View>
     </SafeAreaView>
@@ -136,6 +192,9 @@ const style = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 5,
     flexDirection: 'row',
+  },
+  txx: {
+    fontSize: 25,
   },
 });
 

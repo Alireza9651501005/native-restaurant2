@@ -19,7 +19,7 @@ const {width} = Dimensions.get('screen');
 const cardWidth = width / 2 - 20;
 
 const Card = ({food, navigation}) => {
-  const state = useSelector(state => state);
+  const state = useSelector(state => state.reducer);
   const dispatch = useDispatch();
   const newState = state;
   const newItem = newState.find(e => e.id === food.id);

@@ -1,14 +1,14 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
-import {addtocart, removefromcart} from './../../redux/action';
+import {removefromFavo} from './../../redux/action';
 import COLORS from '../../consts/colors';
 import {useSelector, useDispatch} from 'react-redux';
-import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
-import {faPlusCircle, faMinusCircle} from '@fortawesome/free-solid-svg-icons';
+// import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+// import {faPlusCircle, faMinusCircle} from '@fortawesome/free-solid-svg-icons';
 
-const CartCard = ({item}) => {
+const CartCard2 = ({item}) => {
   const dispatch = useDispatch();
-  const state = useSelector(state => state.reducer);
+  const state = useSelector(state => state.reducer3);
   const state2 = state;
   const item2 = state2.find(e => e.id === item.id);
   return (
@@ -28,15 +28,13 @@ const CartCard = ({item}) => {
         <Text style={{fontSize: 17, fontWeight: 'bold'}}>${item.price}</Text>
       </View>
       <View style={{marginRight: 20, alignItems: 'center'}}>
-        <Text style={{fontWeight: 'bold', fontSize: 18}}>
+        {/* <Text style={{fontWeight: 'bold', fontSize: 18}}>
           {item2 ? item2.count : 0}
-        </Text>
+        </Text> */}
         <View style={style.actionBtn}>
-          <TouchableOpacity onPress={() => dispatch(removefromcart(item))}>
-            <FontAwesomeIcon icon={faMinusCircle} size={30} color="white" />
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => dispatch(addtocart(item))}>
-            <FontAwesomeIcon icon={faPlusCircle} size={30} color="white" />
+          <TouchableOpacity onPress={() => dispatch(removefromFavo(item))}>
+            {/* <FontAwesomeIcon icon={faMinusCircle} size={30} color="white" /> */}
+            <Text>حذف</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -44,7 +42,7 @@ const CartCard = ({item}) => {
   );
 };
 
-export default CartCard;
+export default CartCard2;
 
 const style = StyleSheet.create({
   cartCard: {

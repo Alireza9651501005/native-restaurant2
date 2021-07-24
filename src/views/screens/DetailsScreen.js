@@ -1,16 +1,36 @@
-import React from 'react';
-import {SafeAreaView, StyleSheet, View, Text, Image} from 'react-native';
+import React, {useState, useEffect} from 'react';
+import {
+  SafeAreaView,
+  StyleSheet,
+  View,
+  Text,
+  Image,
+  TouchableOpacity,
+} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
 import COLORS from '../../consts/colors';
 import {SecondaryButton} from '../components/Button';
-import {useDispatch} from 'react-redux';
-import {addtocart} from './../../redux/action';
+import {useDispatch, useSelector} from 'react-redux';
+import {addtocart, addtoFavo, removefromFavo} from './../../redux/action';
 import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faLessThan, faHeart} from '@fortawesome/free-solid-svg-icons';
 
 const DetailsScreen = ({navigation, route}) => {
+  // const [flag, setflag] = useState(false);
   const item = route.params;
+  const state = useSelector(state => state.reducer3);
+  const newState = state;
+  const newItem = newState.find(e => e.id === item.id);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    // if (flag) {
+    //   dispatch(addtoFavo(item));
+    // } else {
+    //   dispatch(removefromFavo(item));
+    // }
+    console.log('hasan roohani');
+  }, []);
   return (
     <SafeAreaView style={{backgroundColor: COLORS.white}}>
       <View style={style.header}>
@@ -43,9 +63,19 @@ const DetailsScreen = ({navigation, route}) => {
               style={{fontSize: 25, fontWeight: 'bold', color: COLORS.white}}>
               {item.name}
             </Text>
-            <View style={style.iconContainer}>
-              <FontAwesomeIcon icon={faHeart} size={25} color={COLORS.grey} />
-            </View>
+            <TouchableOpacity
+              style={style.iconContainer}
+              onPress={() => {
+                !newItem
+                  ? dispatch(addtoFavo(item))
+                  : dispatch(removefromFavo(item));
+              }}>
+              <FontAwesomeIcon
+                icon={faHeart}
+                size={25}
+                color={newItem ? 'red' : COLORS.grey}
+              />
+            </TouchableOpacity>
           </View>
           <Text style={style.detailsText}>
             Lorem Ipsum is simply dummy text of the printing and typesetting

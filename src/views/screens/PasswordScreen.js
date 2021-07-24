@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 
 const Mypass = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -54,8 +54,7 @@ const PasswordScreen = ({navigation}) => {
         <Text style={styles.ttxx}>{bb[aa[0]]}</Text>
       </View>
       <View style={styles.jadval}>
-        <Text
-          style={styles.txtt}
+        <TouchableOpacity
           onPress={() => {
             let Arr2 = Arr;
             if (Arr2.length < 3) {
@@ -64,10 +63,9 @@ const PasswordScreen = ({navigation}) => {
             }
             compaire();
           }}>
-          {Mypass[0]}
-        </Text>
-        <Text
-          style={styles.txtt}
+          <Text style={styles.txtt}>{Mypass[0]}</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
           onPress={() => {
             let Arr2 = Arr;
             if (Arr2.length < 3) {
@@ -76,10 +74,9 @@ const PasswordScreen = ({navigation}) => {
             }
             compaire();
           }}>
-          {Mypass[1]}
-        </Text>
-        <Text
-          style={styles.txtt}
+          <Text style={styles.txtt}>{Mypass[1]}</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
           onPress={() => {
             let Arr2 = Arr;
             if (Arr2.length < 3) {
@@ -88,12 +85,11 @@ const PasswordScreen = ({navigation}) => {
             }
             compaire();
           }}>
-          {Mypass[2]}
-        </Text>
+          <Text style={styles.txtt}>{Mypass[2]}</Text>
+        </TouchableOpacity>
       </View>
       <View style={styles.jadval}>
-        <Text
-          style={styles.txtt}
+        <TouchableOpacity
           onPress={() => {
             let Arr2 = Arr;
             if (Arr2.length < 3) {
@@ -102,10 +98,9 @@ const PasswordScreen = ({navigation}) => {
             }
             compaire();
           }}>
-          {Mypass[3]}
-        </Text>
-        <Text
-          style={styles.txtt}
+          <Text style={styles.txtt}>{Mypass[3]}</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
           onPress={() => {
             let Arr2 = Arr;
             if (Arr2.length < 3) {
@@ -114,10 +109,9 @@ const PasswordScreen = ({navigation}) => {
             }
             compaire();
           }}>
-          {Mypass[4]}
-        </Text>
-        <Text
-          style={styles.txtt}
+          <Text style={styles.txtt}>{Mypass[4]}</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
           onPress={() => {
             let Arr2 = Arr;
             if (Arr2.length < 3) {
@@ -126,12 +120,11 @@ const PasswordScreen = ({navigation}) => {
             }
             compaire();
           }}>
-          {Mypass[5]}
-        </Text>
+          <Text style={styles.txtt}>{Mypass[5]}</Text>
+        </TouchableOpacity>
       </View>
       <View style={styles.jadval}>
-        <Text
-          style={styles.txtt}
+        <TouchableOpacity
           onPress={() => {
             let Arr2 = Arr;
             if (Arr2.length < 3) {
@@ -140,10 +133,9 @@ const PasswordScreen = ({navigation}) => {
             }
             compaire();
           }}>
-          {Mypass[6]}
-        </Text>
-        <Text
-          style={styles.txtt}
+          <Text style={styles.txtt}>{Mypass[6]}</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
           onPress={() => {
             let Arr2 = Arr;
             if (Arr2.length < 3) {
@@ -152,10 +144,9 @@ const PasswordScreen = ({navigation}) => {
             }
             compaire();
           }}>
-          {Mypass[7]}
-        </Text>
-        <Text
-          style={styles.txtt}
+          <Text style={styles.txtt}>{Mypass[7]}</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
           onPress={() => {
             let Arr2 = Arr;
             if (Arr2.length < 3) {
@@ -164,8 +155,8 @@ const PasswordScreen = ({navigation}) => {
             }
             compaire();
           }}>
-          {Mypass[8]}
-        </Text>
+          <Text style={styles.txtt}>{Mypass[8]}</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
