@@ -1,4 +1,4 @@
-export const pizzas = [
+export const foods = [
   {
     id: '1',
     name: 'pizza',
@@ -269,13 +269,8 @@ export const pizzas = [
     image:
       'https://images.pexels.com/photos/262977/pexels-photo-262977.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
-];
-
-// ============================= Bergers ====================================//
-
-export const bergers = [
   {
-    id: '1',
+    id: '31',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -284,7 +279,7 @@ export const bergers = [
       'https://images.pexels.com/photos/1893557/pexels-photo-1893557.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '2',
+    id: '32',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -293,7 +288,7 @@ export const bergers = [
       'https://images.pexels.com/photos/2282528/pexels-photo-2282528.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '3',
+    id: '33',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -302,7 +297,7 @@ export const bergers = [
       'https://images.pexels.com/photos/3219547/pexels-photo-3219547.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '4',
+    id: '34',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -311,7 +306,7 @@ export const bergers = [
       'https://images.pexels.com/photos/2983098/pexels-photo-2983098.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '5',
+    id: '35',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -320,7 +315,7 @@ export const bergers = [
       'https://images.pexels.com/photos/4109129/pexels-photo-4109129.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
   },
   {
-    id: '6',
+    id: '36',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -329,7 +324,7 @@ export const bergers = [
       'https://images.pexels.com/photos/4676441/pexels-photo-4676441.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '7',
+    id: '37',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -338,7 +333,7 @@ export const bergers = [
       'https://images.pexels.com/photos/3826273/pexels-photo-3826273.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '8',
+    id: '38',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -347,7 +342,7 @@ export const bergers = [
       'https://images.pexels.com/photos/3659861/pexels-photo-3659861.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '9',
+    id: '39',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -356,7 +351,7 @@ export const bergers = [
       'https://images.pexels.com/photos/2983102/pexels-photo-2983102.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '10',
+    id: '40',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -365,7 +360,7 @@ export const bergers = [
       'https://images.pexels.com/photos/4676445/pexels-photo-4676445.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '11',
+    id: '41',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -374,7 +369,7 @@ export const bergers = [
       'https://images.pexels.com/photos/4253708/pexels-photo-4253708.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '12',
+    id: '42',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -383,7 +378,7 @@ export const bergers = [
       'https://images.pexels.com/photos/4409273/pexels-photo-4409273.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '13',
+    id: '43',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -392,7 +387,7 @@ export const bergers = [
       'https://images.pexels.com/photos/4109268/pexels-photo-4109268.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '14',
+    id: '44',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -401,7 +396,7 @@ export const bergers = [
       'https://images.pexels.com/photos/4871115/pexels-photo-4871115.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '15',
+    id: '45',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -410,7 +405,7 @@ export const bergers = [
       'https://images.pexels.com/photos/6006599/pexels-photo-6006599.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '16',
+    id: '46',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -419,7 +414,7 @@ export const bergers = [
       'https://images.pexels.com/photos/6006600/pexels-photo-6006600.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '17',
+    id: '47',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -428,7 +423,7 @@ export const bergers = [
       'https://images.pexels.com/photos/6697455/pexels-photo-6697455.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '18',
+    id: '48',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -437,7 +432,7 @@ export const bergers = [
       'https://images.pexels.com/photos/4809158/pexels-photo-4809158.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '19',
+    id: '49',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -446,7 +441,7 @@ export const bergers = [
       'https://images.pexels.com/photos/5171016/pexels-photo-5171016.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '20',
+    id: '50',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -455,7 +450,7 @@ export const bergers = [
       'https://images.pexels.com/photos/6242258/pexels-photo-6242258.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '21',
+    id: '51',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -464,7 +459,7 @@ export const bergers = [
       'https://images.pexels.com/photos/7007929/pexels-photo-7007929.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '22',
+    id: '52',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -473,7 +468,7 @@ export const bergers = [
       'https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '23',
+    id: '53',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -482,7 +477,7 @@ export const bergers = [
       'https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '24',
+    id: '54',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -491,7 +486,7 @@ export const bergers = [
       'https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '25',
+    id: '55',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -500,7 +495,7 @@ export const bergers = [
       'https://images.pexels.com/photos/1108117/pexels-photo-1108117.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '26',
+    id: '56',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -509,7 +504,7 @@ export const bergers = [
       'https://images.pexels.com/photos/580612/pexels-photo-580612.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '27',
+    id: '57',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -518,7 +513,7 @@ export const bergers = [
       'https://images.pexels.com/photos/750075/pexels-photo-750075.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '28',
+    id: '58',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -527,7 +522,7 @@ export const bergers = [
       'https://images.pexels.com/photos/327158/pexels-photo-327158.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '29',
+    id: '59',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -536,7 +531,7 @@ export const bergers = [
       'https://images.pexels.com/photos/2067403/pexels-photo-2067403.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '30',
+    id: '60',
     name: 'berger',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -544,13 +539,8 @@ export const bergers = [
     image:
       'https://images.pexels.com/photos/2983099/pexels-photo-2983099.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
-];
-
-// ============================= sushi ==============================================//
-
-export const sushies = [
   {
-    id: '1',
+    id: '61',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -559,7 +549,7 @@ export const sushies = [
       'https://images.pexels.com/photos/6984182/pexels-photo-6984182.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '2',
+    id: '62',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -568,7 +558,7 @@ export const sushies = [
       'https://images.pexels.com/photos/3298596/pexels-photo-3298596.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '3',
+    id: '63',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -577,7 +567,7 @@ export const sushies = [
       'https://images.pexels.com/photos/3338499/pexels-photo-3338499.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '4',
+    id: '64',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -586,7 +576,7 @@ export const sushies = [
       'https://images.pexels.com/photos/3304057/pexels-photo-3304057.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '5',
+    id: '65',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -595,7 +585,7 @@ export const sushies = [
       'https://images.pexels.com/photos/3338496/pexels-photo-3338496.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '6',
+    id: '66',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -604,7 +594,7 @@ export const sushies = [
       'https://images.pexels.com/photos/3338500/pexels-photo-3338500.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '7',
+    id: '67',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -613,7 +603,7 @@ export const sushies = [
       'https://images.pexels.com/photos/4725576/pexels-photo-4725576.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '8',
+    id: '68',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -622,7 +612,7 @@ export const sushies = [
       'https://images.pexels.com/photos/5208238/pexels-photo-5208238.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '9',
+    id: '69',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -631,7 +621,7 @@ export const sushies = [
       'https://images.pexels.com/photos/6310247/pexels-photo-6310247.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '10',
+    id: '70',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -640,7 +630,7 @@ export const sushies = [
       'https://images.pexels.com/photos/6144972/pexels-photo-6144972.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '11',
+    id: '71',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -649,7 +639,7 @@ export const sushies = [
       'https://images.pexels.com/photos/5878433/pexels-photo-5878433.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '12',
+    id: '72',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -658,7 +648,7 @@ export const sushies = [
       'https://images.pexels.com/photos/6531103/pexels-photo-6531103.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '13',
+    id: '73',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -667,7 +657,7 @@ export const sushies = [
       'https://images.pexels.com/photos/6388704/pexels-photo-6388704.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '14',
+    id: '74',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -676,7 +666,7 @@ export const sushies = [
       'https://images.pexels.com/photos/5677401/pexels-photo-5677401.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '15',
+    id: '75',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -685,7 +675,7 @@ export const sushies = [
       'https://images.pexels.com/photos/6851406/pexels-photo-6851406.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '16',
+    id: '76',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -694,7 +684,7 @@ export const sushies = [
       'https://images.pexels.com/photos/6851402/pexels-photo-6851402.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '17',
+    id: '77',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -703,7 +693,7 @@ export const sushies = [
       'https://images.pexels.com/photos/2098085/pexels-photo-2098085.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '18',
+    id: '78',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -712,7 +702,7 @@ export const sushies = [
       'https://images.pexels.com/photos/1148086/pexels-photo-1148086.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '19',
+    id: '79',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -721,7 +711,7 @@ export const sushies = [
       'https://images.pexels.com/photos/271715/pexels-photo-271715.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '20',
+    id: '80',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -730,7 +720,7 @@ export const sushies = [
       'https://images.pexels.com/photos/9210/food-japanese-food-photography-sushi.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '21',
+    id: '81',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -739,7 +729,7 @@ export const sushies = [
       'https://images.pexels.com/photos/1108104/pexels-photo-1108104.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '22',
+    id: '82',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -748,7 +738,7 @@ export const sushies = [
       'https://images.pexels.com/photos/684965/pexels-photo-684965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '23',
+    id: '83',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -757,7 +747,7 @@ export const sushies = [
       'https://images.pexels.com/photos/2323398/pexels-photo-2323398.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '24',
+    id: '84',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -766,7 +756,7 @@ export const sushies = [
       'https://images.pexels.com/photos/248444/pexels-photo-248444.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '25',
+    id: '85',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -775,7 +765,7 @@ export const sushies = [
       'https://images.pexels.com/photos/1052189/pexels-photo-1052189.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '26',
+    id: '86',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -784,7 +774,7 @@ export const sushies = [
       'https://images.pexels.com/photos/359993/pexels-photo-359993.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '27',
+    id: '87',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -793,7 +783,7 @@ export const sushies = [
       'https://images.pexels.com/photos/1683545/pexels-photo-1683545.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '28',
+    id: '88',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -802,7 +792,7 @@ export const sushies = [
       'https://images.pexels.com/photos/681586/sushi-japan-soya-rice-681586.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '29',
+    id: '89',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -811,7 +801,7 @@ export const sushies = [
       'https://images.pexels.com/photos/1148084/pexels-photo-1148084.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '30',
+    id: '90',
     name: 'sushi',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -819,13 +809,8 @@ export const sushies = [
     image:
       'https://images.pexels.com/photos/3147493/pexels-photo-3147493.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
-];
-
-// =================== salad ======================================================//
-
-export const salads = [
   {
-    id: '1',
+    id: '91',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -834,7 +819,7 @@ export const salads = [
       'https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '2',
+    id: '92',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -843,7 +828,7 @@ export const salads = [
       'https://images.pexels.com/photos/257816/pexels-photo-257816.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '3',
+    id: '93',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -852,7 +837,7 @@ export const salads = [
       'https://images.pexels.com/photos/5938/food-salad-healthy-lunch.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '4',
+    id: '94',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -861,7 +846,7 @@ export const salads = [
       'https://images.pexels.com/photos/1213710/pexels-photo-1213710.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '5',
+    id: '95',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -870,7 +855,7 @@ export const salads = [
       'https://images.pexels.com/photos/434258/pexels-photo-434258.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '6',
+    id: '96',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -879,7 +864,7 @@ export const salads = [
       'https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '7',
+    id: '97',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -888,7 +873,7 @@ export const salads = [
       'https://images.pexels.com/photos/406152/pexels-photo-406152.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '8',
+    id: '98',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -897,7 +882,7 @@ export const salads = [
       'https://images.pexels.com/photos/806361/pexels-photo-806361.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '9',
+    id: '99',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -906,7 +891,7 @@ export const salads = [
       'https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '10',
+    id: '100',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -915,7 +900,7 @@ export const salads = [
       'https://images.pexels.com/photos/5916/food-salad-healthy-colorful.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '11',
+    id: '101',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -924,7 +909,7 @@ export const salads = [
       'https://images.pexels.com/photos/764925/pexels-photo-764925.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '12',
+    id: '102',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -933,7 +918,7 @@ export const salads = [
       'https://images.pexels.com/photos/2862154/pexels-photo-2862154.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '13',
+    id: '103',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -942,7 +927,7 @@ export const salads = [
       'https://images.pexels.com/photos/2116090/pexels-photo-2116090.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '14',
+    id: '104',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -951,7 +936,7 @@ export const salads = [
       'https://images.pexels.com/photos/1152237/pexels-photo-1152237.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '15',
+    id: '105',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -960,7 +945,7 @@ export const salads = [
       'https://images.pexels.com/photos/628777/pexels-photo-628777.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '16',
+    id: '106',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -969,7 +954,7 @@ export const salads = [
       'https://images.pexels.com/photos/1833333/pexels-photo-1833333.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '17',
+    id: '107',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -978,7 +963,7 @@ export const salads = [
       'https://images.pexels.com/photos/299352/pexels-photo-299352.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '18',
+    id: '108',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -987,7 +972,7 @@ export const salads = [
       'https://images.pexels.com/photos/709823/pexels-photo-709823.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '19',
+    id: '109',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -996,7 +981,7 @@ export const salads = [
       'https://images.pexels.com/photos/1435893/pexels-photo-1435893.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '20',
+    id: '110',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -1005,7 +990,7 @@ export const salads = [
       'https://images.pexels.com/photos/1639556/pexels-photo-1639556.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '21',
+    id: '111',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -1014,7 +999,7 @@ export const salads = [
       'https://images.pexels.com/photos/1013518/pexels-photo-1013518.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '22',
+    id: '112',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -1023,7 +1008,7 @@ export const salads = [
       'https://images.pexels.com/photos/793759/pexels-photo-793759.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '23',
+    id: '113',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -1032,7 +1017,7 @@ export const salads = [
       'https://images.pexels.com/photos/566566/pexels-photo-566566.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '24',
+    id: '114',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -1041,7 +1026,7 @@ export const salads = [
       'https://images.pexels.com/photos/139751/pexels-photo-139751.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '25',
+    id: '115',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -1050,7 +1035,7 @@ export const salads = [
       'https://images.pexels.com/photos/5604/salad-leaf-leaves-green.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '26',
+    id: '116',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -1059,7 +1044,7 @@ export const salads = [
       'https://images.pexels.com/photos/1234535/pexels-photo-1234535.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '27',
+    id: '117',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -1068,7 +1053,7 @@ export const salads = [
       'https://images.pexels.com/photos/803963/pexels-photo-803963.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '28',
+    id: '118',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -1077,7 +1062,7 @@ export const salads = [
       'https://images.pexels.com/photos/3662123/pexels-photo-3662123.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '29',
+    id: '119',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,
@@ -1086,7 +1071,7 @@ export const salads = [
       'https://images.pexels.com/photos/1833334/pexels-photo-1833334.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
   },
   {
-    id: '30',
+    id: '120',
     name: 'salad',
     ingredients: 'گوشت  ماهی سالمون',
     count: 0,

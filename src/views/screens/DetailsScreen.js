@@ -20,7 +20,7 @@ const DetailsScreen = ({navigation, route}) => {
   const item = route.params;
   const state = useSelector(state => state.reducer3);
   const newState = state;
-  const newItem = newState.find(e => e.id === item.id);
+  const newItem = newState.find(e => e.id === item.id && e.name === item.name);
   const dispatch = useDispatch();
 
   useEffect(() => {

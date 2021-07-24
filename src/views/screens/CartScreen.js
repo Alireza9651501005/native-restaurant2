@@ -12,10 +12,8 @@ import {useDeviceOrientation} from '@react-native-community/hooks';
 
 const CartScreen = ({navigation}) => {
   const {portrait} = useDeviceOrientation();
-
   const dispatch = useDispatch();
   const state = useSelector(state => state.reducer);
-  let sum = 0;
   return (
     <SafeAreaView style={{backgroundColor: COLORS.white, flex: 1}}>
       <View style={style.header}>
@@ -40,7 +38,6 @@ const CartScreen = ({navigation}) => {
           contentContainerStyle={{paddingBottom: 80}}
           data={state}
           renderItem={({item}) => {
-            sum += item.count * item.price;
             return <CartCard item={item} />;
           }}
           ListFooterComponentStyle={{paddingHorizontal: 20, marginTop: 20}}
@@ -56,7 +53,7 @@ const CartScreen = ({navigation}) => {
                   کل مبلغ پرداختی
                 </Text>
                 <Text style={{fontSize: 18, fontWeight: 'bold'}}>
-                  {sum.toFixed(2)}
+                  {state.reduce((a, c) => a + c.price * c.count, 0).toFixed(2)}
                 </Text>
               </View>
               <View

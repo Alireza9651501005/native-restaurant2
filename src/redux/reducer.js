@@ -3,9 +3,7 @@ const initialState = [];
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_TO_CART':
-      const item = state.find(
-        e => e.id === action.payload.id && e.name === action.payload.name,
-      );
+      const item = state.find(e => e.id === action.payload.id);
       if (item) {
         item.count += 1;
         return [...state];
@@ -13,9 +11,7 @@ const reducer = (state = initialState, action) => {
       return [...state, {...action.payload, count: 1}];
 
     case 'REMOVE_FROM_CART':
-      const item2 = state.find(
-        e => e.id === action.payload.id && e.name === action.payload.name,
-      );
+      const item2 = state.find(e => e.id === action.payload.id);
       if (item2) {
         item2.count -= 1;
         if (item2.count > 0) {

@@ -22,7 +22,7 @@ const Card = ({food, navigation}) => {
   const state = useSelector(state => state.reducer);
   const dispatch = useDispatch();
   const newState = state;
-  const newItem = newState.find(e => e.id === food.id);
+  const newItem = newState.find(e => e.id === food.id && e.name === food.name);
   return (
     <View style={style.card}>
       <TouchableHighlight

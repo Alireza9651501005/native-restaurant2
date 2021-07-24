@@ -16,10 +16,10 @@ import Card from '../components/Card';
 import {useDeviceOrientation} from '@react-native-community/hooks';
 
 import ListCategories from '../components/ListCategories';
-import {pizzas} from './../../consts/foods';
-import {sushies} from './../../consts/foods';
-import {salads} from './../../consts/foods';
-import {bergers} from './../../consts/foods';
+import {foods} from './../../consts/foods';
+// import {sushies} from './../../consts/foods';
+// import {salads} from './../../consts/foods';
+// import {bergers} from './../../consts/foods';
 
 const HomeScreen = ({navigation}) => {
   const state = useSelector(state => state.reducer2);
@@ -29,33 +29,29 @@ const HomeScreen = ({navigation}) => {
   const {portrait} = useDeviceOrientation();
 
   useEffect(() => {
+    setPosts(foods);
+  }, []);
+
+  useEffect(() => {
     if (state.length) {
       switch (state.toString()) {
-        case 'bergers': {
-          setPosts(bergers);
+        case 'pizzas':
           setCurrentPage(1);
-        }
-        break;
-        case 'sushies': {
-          setPosts(sushies);
-          setCurrentPage(1);
-        }
-        break;
-        case 'salads': {
-          setPosts(salads);
-          setCurrentPage(1);
-        }
-        break;
-        case 'pizzas': {
-          setPosts(pizzas);
-          setCurrentPage(1);
-        }
-        break;
+          break;
+        case 'bergers':
+          setCurrentPage(4);
+          break;
+        case 'sushies':
+          setCurrentPage(7);
+          break;
+        case 'salads':
+          setCurrentPage(10);
+          break;
         default:
-          setPosts(pizzas);
+          setCurrentPage(1);
       }
     } else {
-      setPosts(pizzas);
+      setCurrentPage(1);
     }
   }, [state]);
 
@@ -73,6 +69,15 @@ const HomeScreen = ({navigation}) => {
     1: 'صفحه 1',
     2: 'صفحه 2',
     3: 'صفحه 3',
+    4: 'صفحه 4',
+    5: 'صفحه 5',
+    6: 'صفحه 6',
+    7: 'صفحه 7',
+    8: 'صفحه 8',
+    9: 'صفحه 9',
+    10: 'صفحه 10',
+    11: 'صفحه 11',
+    12: 'صفحه 12',
   };
 
   return (
@@ -127,7 +132,7 @@ const HomeScreen = ({navigation}) => {
           showsVerticalScrollIndicator={false}
           numColumns={2}
           data={currentPosts}
-          keyExtractor={(item, index) => index}
+          keyExtractor={item => item.id}
           renderItem={({item}) => <Card food={item} navigation={navigation} />}
           onEndReachedThreshold={0}
           onEndReached={changeIndex}
